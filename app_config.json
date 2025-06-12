@@ -1,0 +1,25 @@
+{"authConfig": {
+  "apiUrl": "https://oauth.hm.bb.com.br",
+  "endPoints": ["/oauth/token","/ui/authorize"],
+  "clientId": "your_client_id",
+  "clientSecret": "your_client_secret",
+  "AUTH_API_BASIC": "ZXlKcFpDSTZJamN3WXpCaFlqVXRJaXdpWTI5a2FXZHZVSFZpYkdsallXUnZjaUk2TUN3aVkyOWthV2R2VTI5bWRIZGhjbVVpT2pFeU56ZzNNaXdpYzJWeGRXVnVZMmxoYkVsdWMzUmhiR0ZqWVc4aU9qRjk6ZXlKcFpDSTZJamM1TnpBelkyRXRaalpoTUMwMFlqYzBMVGtpTENKamIyUnBaMjlRZFdKc2FXTmhaRzl5SWpvd0xDSmpiMlJwWjI5VGIyWjBkMkZ5WlNJNk1USTNPRGN5TENKelpYRjFaVzVqYVdGc1NXNXpkR0ZzWVdOaGJ5STZNU3dpYzJWeGRXVnVZMmxoYkVOeVpXUmxibU5wWVd3aU9qRXNJbUZ0WW1sbGJuUmxJam9pYUc5dGIyeHZaMkZqWVc4aUxDSnBZWFFpT2pFM05ERTFOalE1T1RNNU1UTjk="
+},
+
+"pixConfig": {
+  "apiUrl": "https://api-pix.hm.bb.com.br/pix",
+  "endPoints": {"cob":"/cob","cobr":"/cobr","cobv":"/cobv","webhook":"/webhook"},
+  "merchantId": "your_merchant_id",
+  "MERCHANT_CITY":"Campos dos Goytacazes",
+  "MERCHANT_NAME":"TechSupport",
+  "PIXAPI_VERSION": 2,
+  "PIXAPI_BASIC": "",
+  "PIXAPI_TOKEN":""
+},
+
+"wappConfig" : {
+  "WEBHOOK_VERIFY_TOKEN":"RAND#8088%1st-Token-wds",
+"GRAPH_API_TOKEN":"EAAHbKnBl6pgBO17qxu1UkH0dpUpZCczBf7KVDdnbETtIYMAbXilfshEL5NCiquS6GoAiZBZBzCpMrHSgtMapBm5XwwztqqXkiWTFX0TjACqpi65ZAgSiyNeG07ZArFaQ6EYjVkhO6thw9HW44JYpSGtWfYmiNYkHIV6cjsrZBkPZBDV9FiLbpdW2NdNklWPjp5TZCIwKhZAOJj42J88hUZCAICOUiMQncZD",
+  "ENDPOINT_VERSION" : "22.0"
+}
+}
