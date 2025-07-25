@@ -15,7 +15,11 @@ const app = express();
 var wapp,business_phone_number_id,logstr;
 app.use(express.json());
 
-const {PORT, WEBHOOK_VERIFY_TOKEN, GRAPH_API_TOKEN, ENDPOINT_VERSION} = process.env
+const DEFAULT_PORT=8000
+const ALL_IPS='0.0.0.0'
+const {PORT,IP,WEBHOOK_VERIFY_TOKEN, GRAPH_API_TOKEN, ENDPOINT_VERSION} = process.env
+const BIND_PORT=PORT??DEFAULT_PORT
+const BIND_IP=IP??ALL_IPS
 
 const MsgType=Object.freeze({DOC:"document",TEXT:"text",IMAGE:"image",UNKNOW:'unknow'});
 
@@ -149,6 +153,7 @@ app.get("/", (req, res) => {
 Checkout README.md to start.</pre>`);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port: ${PORT}`);
+const server=app.listen(BIND_PORT, BIND_IP, () => {
+  const addr=server.address()
+  console.log(`Server is listening on ${addr.address}:${addr.port}`);
 });
